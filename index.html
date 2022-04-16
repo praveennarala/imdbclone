@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Imdb clone</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+</head>
+
+<body class="bg-dark bg-gradient">
+
+  <!-- navbar -->
+  <div class="navbar navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img id="logo"
+          src="https://ia.media-imdb.com/images/M/MV5BMTk3ODA4Mjc0NF5BMl5BcG5nXkFtZTgwNDc1MzQ2OTE@._V1_.png"
+          width="50" />
+      </a>
+      <div class="nav pull-right">
+        <button id="showHome" type="button" class="btn btn-dark navbar-btn">
+          Home
+        </button>
+        <button id="showFav" type="button" class="btn btn-dark navbar-btn">
+          Favourites
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- alert -->
+  <p id="alert"></p>
+
+  <!-- home page -->
+  <div id="home">
+    <div class="hint-wrapper text-center">
+
+      <!-- search input -->
+      <div id="search-input">
+        <input type="text" id="movie-search-box" class="form-control" onkeyup="searchMovies()"
+          onclick="searchMovies()" />
+        <div class="datalist-wrapper">
+          <ul class="search-list"></ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- movie -->
+    <div class="movie-page">
+      <div class="container">
+        <div class="row" id="movie-details"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- favourites movies -->
+  <div id="favourites" class="hide">
+    <h2 style="text-align: center; color: white;">Favourite Movies</h2>
+    <div class="grid-of-fav"></div>
+  </div>
+
+  <!-- javascript -->
+  <script src='main.js'></script>
+</body>
+
+</html>

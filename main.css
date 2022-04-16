@@ -1,0 +1,83 @@
+body{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.hide{
+  display: none;
+}
+
+#search-input {
+  position: relative;
+  display: inline-block;
+}
+.datalist-wrapper {
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
+
+.datalist-wrapper ul {
+  width: 100%;
+  list-style-type: none;
+}
+
+.search-list li{
+  background-color: white;
+  padding: 2px;
+}
+
+.search-list li:hover{
+  background-color: rgb(206, 199, 187);
+}
+
+.movie-page{
+  padding: 20px;
+  color: white;
+}
+
+.movie-img{
+  padding: 50px;
+}
+
+.movie-poster{
+  border: 5px solid white;
+}
+
+.movie-info{
+  padding: 50px;
+}
+
+.movie-title{
+  color: #D4AA11;
+  width: 630px;
+}
+
+#home p{
+  width: 630px;
+}
+
+.favourite-movie{
+  margin:20px;
+}
+
+#alert{
+  padding: 20px;
+  text-align: center;
+  color: white;
+  margin-left: 500px;
+  margin-right: 500px;
+}
+
+.success{
+  background-color: rgb(66, 0, 128);
+}
+
+.danger{
+  background-color: red;
+}
+
+.grid-of-fav{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 100px;
+}
